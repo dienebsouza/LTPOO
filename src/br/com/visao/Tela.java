@@ -11,8 +11,7 @@ public class Tela {
     public static void main(String[] args) {
         //cópia de Dobro -> d
         Dobro d = new Dobro();
-        d.setValor(8);
-        d.calcularDobro();
+        d.setValor(Integer.valueOf(JOptionPane.showInputDialog("Digite um número")));
         
         JOptionPane.showMessageDialog(null, d.calcularDobro());
     }
